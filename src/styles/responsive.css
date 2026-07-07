@@ -1,0 +1,352 @@
+/* ==========================================
+   LARGE LAPTOPS
+========================================== */
+
+@media (max-width: 1400px) {
+
+  .container {
+    width: 92%;
+  }
+
+}
+
+/* ==========================================
+   LAPTOPS
+========================================== */
+
+@media (max-width: 1200px) {
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  .grid-4 {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .tile-main-grid {
+    gap: 40px;
+  }
+
+}
+
+/* ==========================================
+   TABLETS
+========================================== */
+
+@media (max-width: 992px) {
+
+  section {
+    padding: 70px 0;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+  }
+
+  .grid-4 {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .tile-main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .hero-content {
+    max-width: 700px;
+  }
+
+}
+
+/* ==========================================
+   MOBILE LARGE
+========================================== */
+
+@media (max-width: 768px) {
+
+  section {
+    padding: 60px 0;
+  }
+
+  .container {
+    width: 94%;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  /* Navbar */
+
+  .navbar-container {
+    height: auto;
+    padding: 15px 0;
+
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* Hero */
+
+  .hero-section {
+    min-height: 80vh;
+    padding: 100px 0;
+  }
+
+  .hero-content h1 {
+    margin-bottom: 15px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  /* Grids */
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tiles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* About */
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Stats */
+
+  .stat-card {
+    padding: 25px;
+  }
+
+  .stat-card h2 {
+    font-size: 2rem;
+  }
+
+  /* Filter Panel */
+
+  .filters-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact Form */
+
+  .contact-form-wrapper {
+    padding: 25px;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    font-size: 16px;
+  }
+
+  /* Tile Details */
+
+  .tile-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .tile-actions button {
+    width: 100%;
+  }
+
+  .specs-grid,
+  .features-grid,
+  .applications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+
+  .footer-content {
+    text-align: center;
+  }
+
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 576px) {
+
+  section {
+    padding: 50px 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .section-tag {
+    font-size: 0.75rem;
+    padding: 6px 14px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    padding: 14px;
+  }
+
+  .card,
+  .feature-card,
+  .tile-card,
+  .project-card {
+    border-radius: 15px;
+  }
+
+  .hero-section {
+    min-height: 70vh;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .error-number {
+    font-size: 5rem;
+  }
+
+  .contact-card {
+    padding: 20px;
+  }
+
+  .filter-group select {
+    font-size: 15px;
+  }
+
+}
+
+/* ==========================================
+   EXTRA SMALL DEVICES
+========================================== */
+
+@media (max-width: 400px) {
+
+  .container {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .navbar-logo {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .section-tag {
+    font-size: 0.7rem;
+  }
+
+  .error-number {
+    font-size: 4rem;
+  }
+
+}
+
+/* ==========================================
+   LANDSCAPE MOBILE
+========================================== */
+
+@media (max-height: 600px) and (orientation: landscape) {
+
+  .hero-section {
+    min-height: 120vh;
+  }
+
+  .hero-content {
+    padding: 40px 0;
+  }
+
+}
