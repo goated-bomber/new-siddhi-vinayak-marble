@@ -5,12 +5,43 @@ function SimilarTiles({
   tiles = []
 }) {
 
-  const similarTiles = tiles
-    .filter(
-      (tile) =>
-        tile.id !== currentTileId
-    )
-    .slice(0, 3);
+  const currentTile = tiles.find(
+  (tile) => tile.id === currentTileId
+);
+
+const shuffleArray = (array) => {
+  const shuffled = [...array];
+
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+
+    [shuffled[i], shuffled[j]] = [
+      shuffled[j],
+      shuffled[i]
+    ];
+  }
+
+  return shuffled;
+};
+
+const similarTiles = shuffleArray(
+
+  tiles.filter((tile) => {
+
+    if (tile.id === currentTileId)
+      return false;
+
+    if (!currentTile)
+      return true;
+
+    return (
+      JSON.stringify(tile.category) ===
+      JSON.stringify(currentTile.category)
+    );
+
+  })
+
+).slice(0, 3);
 
   return (
     <section className="similar-tiles">

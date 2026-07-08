@@ -61,16 +61,6 @@ function TileDetails() {
 
   }
 
-  /* =========================
-     SIMILAR PRODUCTS
-  ========================= */
-
-  const similarTiles = tiles.filter(
-    (item) =>
-      item.category === tile.category &&
-      item.id !== tile.id
-  );
-
   return (
 
     <div className="tile-details-page">
@@ -289,7 +279,9 @@ function TileDetails() {
               </h4>
 
               <p>
-                {tile.category}
+                {Array.isArray(tile.category)
+                  ? tile.category.join(", ")
+                  : tile.category}
               </p>
 
             </div>
@@ -349,11 +341,9 @@ function TileDetails() {
               </h4>
 
               <p>
-
                 {tile.stock
                   ? "In Stock"
                   : "Available On Order"}
-
               </p>
 
             </div>
@@ -366,14 +356,10 @@ function TileDetails() {
 
       {/* Similar Products */}
 
-      {similarTiles.length > 0 && (
-
-        <SimilarTiles
-          currentTileId={tile.id}
-          tiles={similarTiles}
-        />
-
-      )}
+      <SimilarTiles
+        currentTileId={tile.id}
+        tiles={tiles}
+      />
 
       {/* CTA */}
 

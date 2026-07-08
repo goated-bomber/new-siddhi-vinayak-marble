@@ -86,7 +86,7 @@ const projects = [
     category: "Exterior",
 
     image:
-      "/images/projects/4.png",
+      "/images/projects/6.png",
 
     description:
       "Decorative exterior wall tiles enhancing the balcony with a stylish contemporary appearance.",
@@ -111,7 +111,7 @@ const projects = [
     category: "Kitchen",
 
     image:
-      "/images/projects/5.png",
+      "/images/projects/7.png",
 
     description:
       "Luxury modular kitchen showcasing premium granite surfaces and elegant marble flooring.",
@@ -136,7 +136,7 @@ const projects = [
     category: "Staircase",
 
     image:
-      "/images/projects/6.png",
+      "/images/projects/8.png",
 
     description:
       "Designer marble staircase complemented with decorative wall tiles and modern stainless steel railing.",
@@ -161,7 +161,7 @@ const projects = [
     category: "Feature Wall",
 
     image:
-      "/images/projects/7.png",
+      "/images/projects/9.png",
 
     description:
       "Luxury portrait tile installation creating an eye-catching decorative feature wall.",
@@ -186,7 +186,7 @@ const projects = [
     category: "Prayer Room",
 
     image:
-      "/images/projects/8.png",
+      "/images/projects/5.png",
 
     description:
       "Beautiful marble flooring with elegant floral wall tiles, creating a peaceful prayer space.",
@@ -211,7 +211,7 @@ const projects = [
     category: "Utility",
 
     image:
-      "/images/projects/9.png",
+      "/images/projects/11.png",
 
     description:
       "Bright utility area finished with premium marble flooring and decorative wall tiles.",
@@ -236,7 +236,7 @@ const projects = [
     category: "Bedroom",
 
     image:
-      "/images/projects/10.png",
+      "/images/projects/12.png",
 
     description:
       "Elegant bedroom featuring premium marble flooring with warm contemporary interiors.",
@@ -260,7 +260,7 @@ const projects = [
     category: "Living Room",
 
     image:
-      "/images/projects/11.png",
+      "/images/projects/10.png",
 
     description:
       "Spacious marble hall designed with decorative borders and polished premium finishes.",
@@ -276,30 +276,31 @@ const projects = [
   },
 
   {
-    id: 12,
+  id: 12,
 
-    slug: "modern-home-interior",
+  slug: "premium-balcony-entrance",
 
-    title: "Modern Home Interior",
+  title: "Premium Balcony Entrance",
 
-    category: "Interior",
+  category: "Balcony",
 
-    image:
-      "/images/projects/12.png",
+  image:
+    "/images/projects/4.png",
 
-    description:
-      "A complete premium interior featuring marble flooring, designer tiles and elegant craftsmanship.",
+  description:
+    "Modern residential balcony showcasing premium designer wall tiles, marble flooring, elegant wooden door, and stainless steel railing with a luxurious contemporary finish.",
 
-    location: "Residential Project",
+  location: "Residential Project",
 
-    materials: [
-      "Premium Marble",
-      "Designer Tiles",
-      "Granite"
-    ],
+  materials: [
+    "Designer Wall Tiles",
+    "Premium Marble Flooring",
+    "Decorative Border Inlay",
+    "Stainless Steel Railing"
+  ],
 
-    featured: true
-  }
+  featured: true
+},
 
 ];
 

@@ -1,61 +1,11 @@
 import { Link } from "react-router-dom";
+import projects from "../../data/projects";
 
 function ProjectGallery() {
-  const projects = [
-    {
-      id: 1,
-      title: "Luxury Living Room",
-      category: "Living Room",
-      image: "/images/projects/living-room/project1.webp",
-      description:
-        "Premium marble flooring with elegant finishes."
-    },
 
-    {
-      id: 2,
-      title: "Modern Kitchen",
-      category: "Kitchen",
-      image: "/images/projects/kitchen/project1.webp",
-      description:
-        "Contemporary tile solutions for stylish kitchens."
-    },
-
-    {
-      id: 3,
-      title: "Elegant Bathroom",
-      category: "Bathroom",
-      image: "/images/projects/bathroom/project1.webp",
-      description:
-        "Luxury wall and floor tile combinations."
-    },
-
-    {
-      id: 4,
-      title: "Commercial Space",
-      category: "Commercial",
-      image: "/images/projects/commercial/project1.webp",
-      description:
-        "Premium surfaces designed for high-traffic areas."
-    },
-
-    {
-      id: 5,
-      title: "Outdoor Area",
-      category: "Exterior",
-      image: "/images/projects/exterior/project1.webp",
-      description:
-        "Durable outdoor flooring and wall solutions."
-    },
-
-    {
-      id: 6,
-      title: "Premium Entrance Lobby",
-      category: "Lobby",
-      image: "/images/projects/lobby/project1.webp",
-      description:
-        "Sophisticated marble installation for luxury spaces."
-    }
-  ];
+  const featuredProjects = projects.filter(
+    (project) => project.featured
+  );
 
   return (
     <section className="project-gallery">
@@ -64,25 +14,25 @@ function ProjectGallery() {
 
         <div className="gallery-header">
 
-  <span className="section-tag">
-    OUR PORTFOLIO
-  </span>
+          <span className="section-tag">
+            OUR PORTFOLIO
+          </span>
 
-  <h2>
-    Completed Projects
-  </h2>
+          <h2>
+            Completed Projects
+          </h2>
 
-  <p>
-    Explore how our premium marble, granite and
-    luxury tile collections transform homes,
-    villas, offices and commercial spaces.
-  </p>
+          <p>
+            Explore how our premium marble, granite and
+            luxury tile collections transform homes,
+            villas, offices and commercial spaces.
+          </p>
 
-</div>
+        </div>
 
         <div className="gallery-grid">
 
-          {projects.map((project) => (
+          {featuredProjects.map((project) => (
 
             <div
               key={project.id}
@@ -94,6 +44,7 @@ function ProjectGallery() {
                 <img
                   src={project.image}
                   alt={project.title}
+                  loading="lazy"
                 />
 
               </div>

@@ -74,7 +74,7 @@ function About() {
             <div className="about-image">
 
               <img
-                src="/images/about/showroom.webp"
+                src="/images/showroom/1.png"
                 alt="New Siddhi Vinayak Marble Showroom"
               />
 
