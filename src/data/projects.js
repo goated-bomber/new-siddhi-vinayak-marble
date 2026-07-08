@@ -1,4 +1,4 @@
-export const projects = [
+const projects = [
 
   {
     id: 1,
@@ -10,16 +10,16 @@ export const projects = [
     category: "Living Room",
 
     image:
-      "/images/projects/living-room/project1.webp",
+      "/images/projects/1.png",
 
     description:
-      "Premium marble flooring installation designed for a modern luxury living room.",
+      "Elegant marble flooring with decorative border work, creating a luxurious and spacious living room.",
 
     location: "Residential Project",
 
     materials: [
-      "Italian White Marble",
-      "Premium Floor Tiles"
+      "Premium Marble",
+      "Decorative Border Inlay"
     ],
 
     featured: true
@@ -28,22 +28,23 @@ export const projects = [
   {
     id: 2,
 
-    slug: "modern-kitchen",
+    slug: "designer-kitchen",
 
-    title: "Modern Kitchen",
+    title: "Designer Kitchen",
 
     category: "Kitchen",
 
     image:
-      "/images/projects/kitchen/project1.webp",
+      "/images/projects/2.png",
 
     description:
-      "Contemporary kitchen featuring designer wall tiles and premium flooring.",
+      "Modern kitchen featuring premium marble flooring, designer wall tiles and polished granite countertop.",
 
     location: "Residential Project",
 
     materials: [
-      "Kitchen Tiles",
+      "Premium Marble",
+      "Granite Countertop",
       "Designer Wall Tiles"
     ],
 
@@ -53,23 +54,23 @@ export const projects = [
   {
     id: 3,
 
-    slug: "premium-bathroom",
+    slug: "modern-staircase",
 
-    title: "Premium Bathroom",
+    title: "Modern Staircase",
 
-    category: "Bathroom",
+    category: "Staircase",
 
     image:
-      "/images/projects/bathroom/project1.webp",
+      "/images/projects/3.png",
 
     description:
-      "Elegant bathroom design with luxury wall and floor tile combinations.",
+      "Premium marble staircase with stainless steel railing, delivering durability and timeless elegance.",
 
     location: "Residential Project",
 
     materials: [
-      "Bathroom Tiles",
-      "Designer Tiles"
+      "Premium Marble",
+      "Stainless Steel Railing"
     ],
 
     featured: true
@@ -78,23 +79,23 @@ export const projects = [
   {
     id: 4,
 
-    slug: "commercial-lobby",
+    slug: "designer-balcony",
 
-    title: "Commercial Lobby",
+    title: "Designer Balcony",
 
-    category: "Commercial",
+    category: "Exterior",
 
     image:
-      "/images/projects/commercial/project1.webp",
+      "/images/projects/4.png",
 
     description:
-      "Large-scale commercial lobby featuring premium marble finishes.",
+      "Decorative exterior wall tiles enhancing the balcony with a stylish contemporary appearance.",
 
-    location: "Commercial Project",
+    location: "Residential Project",
 
     materials: [
-      "Imported Marble",
-      "Granite"
+      "Designer Wall Tiles",
+      "Premium Marble"
     ],
 
     featured: true
@@ -103,23 +104,23 @@ export const projects = [
   {
     id: 5,
 
-    slug: "hotel-reception",
+    slug: "luxury-kitchen-interior",
 
-    title: "Hotel Reception",
+    title: "Luxury Kitchen",
 
-    category: "Hospitality",
+    category: "Kitchen",
 
     image:
-      "/images/projects/hotel/project1.webp",
+      "/images/projects/5.png",
 
     description:
-      "Luxury hotel reception area with imported marble surfaces.",
+      "Luxury modular kitchen showcasing premium granite surfaces and elegant marble flooring.",
 
-    location: "Hospitality Project",
+    location: "Residential Project",
 
     materials: [
-      "Imported Collection",
-      "Luxury Marble"
+      "Premium Granite",
+      "Premium Marble"
     ],
 
     featured: true
@@ -128,48 +129,48 @@ export const projects = [
   {
     id: 6,
 
-    slug: "outdoor-landscape",
+    slug: "premium-staircase",
 
-    title: "Outdoor Landscape",
+    title: "Premium Staircase",
 
-    category: "Exterior",
+    category: "Staircase",
 
     image:
-      "/images/projects/exterior/project1.webp",
+      "/images/projects/6.png",
 
     description:
-      "Weather-resistant outdoor tile installation for premium exterior spaces.",
+      "Designer marble staircase complemented with decorative wall tiles and modern stainless steel railing.",
 
     location: "Residential Project",
 
     materials: [
-      "Outdoor Tiles",
-      "Parking Tiles"
+      "Premium Marble",
+      "Designer Wall Tiles"
     ],
 
-    featured: false
+    featured: true
   },
 
   {
     id: 7,
 
-    slug: "villa-flooring",
+    slug: "portrait-feature-wall",
 
-    title: "Luxury Villa Flooring",
+    title: "Portrait Feature Wall",
 
-    category: "Villa",
+    category: "Feature Wall",
 
     image:
-      "/images/projects/villa/project1.webp",
+      "/images/projects/7.png",
 
     description:
-      "Complete marble flooring solution for a luxury villa.",
+      "Luxury portrait tile installation creating an eye-catching decorative feature wall.",
 
-    location: "Villa Project",
+    location: "Residential Project",
 
     materials: [
-      "Italian Marble",
-      "Imported Marble"
+      "Portrait Tiles",
+      "Premium Marble"
     ],
 
     featured: true
@@ -178,26 +179,126 @@ export const projects = [
   {
     id: 8,
 
-    slug: "office-interior",
+    slug: "designer-prayer-room",
 
-    title: "Office Interior",
+    title: "Designer Prayer Room",
 
-    category: "Office",
+    category: "Prayer Room",
 
     image:
-      "/images/projects/office/project1.webp",
+      "/images/projects/8.png",
 
     description:
-      "Modern office space featuring elegant granite and tile installations.",
+      "Beautiful marble flooring with elegant floral wall tiles, creating a peaceful prayer space.",
 
-    location: "Commercial Project",
+    location: "Residential Project",
 
     materials: [
-      "Granite",
-      "Floor Tiles"
+      "Premium Marble",
+      "Designer Wall Tiles"
+    ],
+
+    featured: true
+  },
+
+  {
+    id: 9,
+
+    slug: "utility-area",
+
+    title: "Premium Utility Area",
+
+    category: "Utility",
+
+    image:
+      "/images/projects/9.png",
+
+    description:
+      "Bright utility area finished with premium marble flooring and decorative wall tiles.",
+
+    location: "Residential Project",
+
+    materials: [
+      "Premium Marble",
+      "Designer Wall Tiles"
     ],
 
     featured: false
+  },
+
+  {
+    id: 10,
+
+    slug: "luxury-bedroom",
+
+    title: "Luxury Bedroom",
+
+    category: "Bedroom",
+
+    image:
+      "/images/projects/10.png",
+
+    description:
+      "Elegant bedroom featuring premium marble flooring with warm contemporary interiors.",
+
+    location: "Residential Project",
+
+    materials: [
+      "Premium Marble"
+    ],
+
+    featured: true
+  },
+
+  {
+    id: 11,
+
+    slug: "premium-marble-hall",
+
+    title: "Premium Marble Hall",
+
+    category: "Living Room",
+
+    image:
+      "/images/projects/11.png",
+
+    description:
+      "Spacious marble hall designed with decorative borders and polished premium finishes.",
+
+    location: "Residential Project",
+
+    materials: [
+      "Premium Marble",
+      "Decorative Border"
+    ],
+
+    featured: true
+  },
+
+  {
+    id: 12,
+
+    slug: "modern-home-interior",
+
+    title: "Modern Home Interior",
+
+    category: "Interior",
+
+    image:
+      "/images/projects/12.png",
+
+    description:
+      "A complete premium interior featuring marble flooring, designer tiles and elegant craftsmanship.",
+
+    location: "Residential Project",
+
+    materials: [
+      "Premium Marble",
+      "Designer Tiles",
+      "Granite"
+    ],
+
+    featured: true
   }
 
 ];
